@@ -18,7 +18,7 @@ def save_report_table(report_table):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
     now = datetime.now().strftime("%Y-%m-%d_%H:%M:%S.%f")
-    filename = os.path.join(folder_path, f"report_audit_{now}.csv")
+    filename = os.path.join(folder_path, f"internal_control_{now}.csv")
     report_table.to_csv(filename, sep=",", index=False)
 
 
